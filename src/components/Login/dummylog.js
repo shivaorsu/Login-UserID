@@ -9,7 +9,7 @@ const emailReducer=(state,action) => {
     return {valid:state.value,isValid:state.value.includes('@')};
   }
   return {valid:'',isValid:false}
-}
+};
 const passwordReducer=(state,action)=>{
   if(action.type=== 'USER_INPUT'){
     return {value:action.val,isValid:action.val.trim().length > 6}
@@ -19,7 +19,7 @@ const passwordReducer=(state,action)=>{
     return {valid:state.value,isValid:state.value.trim().length > 6};
   }
   return {valid:'',isValid:false}
-}
+};
 
 
 const Login = (props) => {
